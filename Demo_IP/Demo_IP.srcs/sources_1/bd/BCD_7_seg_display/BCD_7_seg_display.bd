@@ -1,0 +1,363 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9DAD80BD9DAD80BD",
+      "device": "xc7z010clg400-1",
+      "name": "BCD_7_seg_display",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "BCD_to_7_seg_0": "",
+      "bus_split": {
+        "xlslice_1": "",
+        "xlslice_2": "",
+        "xlslice_3": "",
+        "xlslice_4": "",
+        "xlslice_5": "",
+        "xlslice_6": "",
+        "xlslice_0": ""
+      }
+    },
+    "ports": {
+      "Bin": {
+        "type": "data",
+        "direction": "I",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "a": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "b": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "c": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "d": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "e": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "f": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "g": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      }
+    },
+    "components": {
+      "BCD_to_7_seg_0": {
+        "vlnv": "xilinx.com:user:BCD_to_7_seg:1.0",
+        "xci_name": "BCD_7_seg_display_BCD_to_7_seg_0_0"
+      },
+      "bus_split": {
+        "ports": {
+          "Din": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "b": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "c": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "d": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "e": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "f": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "g": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "a": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        },
+        "components": {
+          "xlslice_1": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "BCD_7_seg_display_xlslice_0_3",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "5"
+              },
+              "DIN_TO": {
+                "value": "5"
+              },
+              "DIN_WIDTH": {
+                "value": "7"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlslice_2": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "BCD_7_seg_display_xlslice_0_4",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "4"
+              },
+              "DIN_TO": {
+                "value": "4"
+              },
+              "DIN_WIDTH": {
+                "value": "7"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlslice_3": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "BCD_7_seg_display_xlslice_0_5",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "3"
+              },
+              "DIN_TO": {
+                "value": "3"
+              },
+              "DIN_WIDTH": {
+                "value": "7"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlslice_4": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "BCD_7_seg_display_xlslice_0_6",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "2"
+              },
+              "DIN_TO": {
+                "value": "2"
+              },
+              "DIN_WIDTH": {
+                "value": "7"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlslice_5": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "BCD_7_seg_display_xlslice_0_7",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "1"
+              },
+              "DIN_TO": {
+                "value": "1"
+              },
+              "DIN_WIDTH": {
+                "value": "7"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlslice_6": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "BCD_7_seg_display_xlslice_0_8",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "0"
+              },
+              "DIN_TO": {
+                "value": "0"
+              },
+              "DIN_WIDTH": {
+                "value": "7"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlslice_0": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "BCD_7_seg_display_xlslice_0_2",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "6"
+              },
+              "DIN_TO": {
+                "value": "6"
+              },
+              "DIN_WIDTH": {
+                "value": "7"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "nets": {
+          "BCD_to_7_seg_0_sout": {
+            "ports": [
+              "Din",
+              "xlslice_0/Din",
+              "xlslice_2/Din",
+              "xlslice_3/Din",
+              "xlslice_4/Din",
+              "xlslice_5/Din",
+              "xlslice_6/Din",
+              "xlslice_1/Din"
+            ]
+          },
+          "xlslice_1_Dout": {
+            "ports": [
+              "xlslice_1/Dout",
+              "b"
+            ]
+          },
+          "xlslice_2_Dout": {
+            "ports": [
+              "xlslice_2/Dout",
+              "c"
+            ]
+          },
+          "xlslice_3_Dout": {
+            "ports": [
+              "xlslice_3/Dout",
+              "d"
+            ]
+          },
+          "xlslice_4_Dout": {
+            "ports": [
+              "xlslice_4/Dout",
+              "e"
+            ]
+          },
+          "xlslice_5_Dout": {
+            "ports": [
+              "xlslice_5/Dout",
+              "f"
+            ]
+          },
+          "xlslice_6_Dout": {
+            "ports": [
+              "xlslice_6/Dout",
+              "g"
+            ]
+          },
+          "xlslice_0_Dout": {
+            "ports": [
+              "xlslice_0/Dout",
+              "a"
+            ]
+          }
+        }
+      }
+    },
+    "nets": {
+      "Bin_1": {
+        "ports": [
+          "Bin",
+          "BCD_to_7_seg_0/bin"
+        ]
+      },
+      "BCD_to_7_seg_0_sout": {
+        "ports": [
+          "BCD_to_7_seg_0/sout",
+          "bus_split/Din"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "bus_split/b",
+          "b"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "bus_split/a",
+          "a"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "bus_split/c",
+          "c"
+        ]
+      },
+      "xlslice_3_Dout": {
+        "ports": [
+          "bus_split/d",
+          "d"
+        ]
+      },
+      "xlslice_4_Dout": {
+        "ports": [
+          "bus_split/e",
+          "e"
+        ]
+      },
+      "xlslice_5_Dout": {
+        "ports": [
+          "bus_split/f",
+          "f"
+        ]
+      },
+      "xlslice_6_Dout": {
+        "ports": [
+          "bus_split/g",
+          "g"
+        ]
+      }
+    }
+  }
+}

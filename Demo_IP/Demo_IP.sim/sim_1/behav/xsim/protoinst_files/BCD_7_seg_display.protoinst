@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"BCD_7_seg_display": {
+			"proto_instances": {
+			}
+		}
+	}
+}

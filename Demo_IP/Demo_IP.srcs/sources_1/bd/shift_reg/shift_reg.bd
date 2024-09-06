@@ -1,0 +1,223 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xAE5B9BF376EF794A",
+      "device": "xc7z010clg400-1",
+      "name": "shift_reg",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "dff_0": "",
+      "dff_1": "",
+      "dff_2": "",
+      "dff_3": ""
+    },
+    "ports": {
+      "din_0": {
+        "direction": "I"
+      },
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "shift_reg_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "clr_0": {
+        "direction": "I"
+      },
+      "q_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "dff_0": {
+        "vlnv": "xilinx.com:module_ref:dff:1.0",
+        "xci_name": "shift_reg_dff_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dff",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "shift_reg_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "din": {
+            "direction": "I"
+          },
+          "clr": {
+            "direction": "I"
+          },
+          "q": {
+            "direction": "O"
+          }
+        }
+      },
+      "dff_1": {
+        "vlnv": "xilinx.com:module_ref:dff:1.0",
+        "xci_name": "shift_reg_dff_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dff",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "shift_reg_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "din": {
+            "direction": "I"
+          },
+          "clr": {
+            "direction": "I"
+          },
+          "q": {
+            "direction": "O"
+          }
+        }
+      },
+      "dff_2": {
+        "vlnv": "xilinx.com:module_ref:dff:1.0",
+        "xci_name": "shift_reg_dff_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dff",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "shift_reg_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "din": {
+            "direction": "I"
+          },
+          "clr": {
+            "direction": "I"
+          },
+          "q": {
+            "direction": "O"
+          }
+        }
+      },
+      "dff_3": {
+        "vlnv": "xilinx.com:module_ref:dff:1.0",
+        "xci_name": "shift_reg_dff_0_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dff",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "shift_reg_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "din": {
+            "direction": "I"
+          },
+          "clr": {
+            "direction": "I"
+          },
+          "q": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "dff_0_q": {
+        "ports": [
+          "dff_0/q",
+          "dff_1/din"
+        ]
+      },
+      "dff_1_q": {
+        "ports": [
+          "dff_1/q",
+          "dff_2/din"
+        ]
+      },
+      "dff_2_q": {
+        "ports": [
+          "dff_2/q",
+          "dff_3/din"
+        ]
+      },
+      "din_0_1": {
+        "ports": [
+          "din_0",
+          "dff_0/din"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "dff_0/clk",
+          "dff_1/clk",
+          "dff_2/clk",
+          "dff_3/clk"
+        ]
+      },
+      "clr_0_1": {
+        "ports": [
+          "clr_0",
+          "dff_0/clr",
+          "dff_1/clr",
+          "dff_2/clr",
+          "dff_3/clr"
+        ]
+      },
+      "dff_3_q": {
+        "ports": [
+          "dff_3/q",
+          "q_0"
+        ]
+      }
+    }
+  }
+}

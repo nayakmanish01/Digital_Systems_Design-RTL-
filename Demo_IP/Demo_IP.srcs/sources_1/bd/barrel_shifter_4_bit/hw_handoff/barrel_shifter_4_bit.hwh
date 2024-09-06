@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jun 11 11:33:17 2024" VIVADOVERSION="2019.1">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.1" DEVICE="7z010" NAME="barrel_shifter_4_bit" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="I0" SIGIS="undef" SIGNAME="External_Ports_I0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_1_3" PORT="I1"/>
+        <CONNECTION INSTANCE="MUX_4_1_2" PORT="I2"/>
+        <CONNECTION INSTANCE="MUX_4_1_1" PORT="I3"/>
+        <CONNECTION INSTANCE="MUX_4_1_0" PORT="I0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="I1" SIGIS="undef" SIGNAME="External_Ports_I1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_1_0" PORT="I1"/>
+        <CONNECTION INSTANCE="MUX_4_1_3" PORT="I2"/>
+        <CONNECTION INSTANCE="MUX_4_1_2" PORT="I3"/>
+        <CONNECTION INSTANCE="MUX_4_1_1" PORT="I0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="I2" SIGIS="undef" SIGNAME="External_Ports_I2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_1_0" PORT="I2"/>
+        <CONNECTION INSTANCE="MUX_4_1_3" PORT="I3"/>
+        <CONNECTION INSTANCE="MUX_4_1_1" PORT="I1"/>
+        <CONNECTION INSTANCE="MUX_4_1_2" PORT="I0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="I3" SIGIS="undef" SIGNAME="External_Ports_I3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_1_3" PORT="I0"/>
+        <CONNECTION INSTANCE="MUX_4_1_0" PORT="I3"/>
+        <CONNECTION INSTANCE="MUX_4_1_2" PORT="I1"/>
+        <CONNECTION INSTANCE="MUX_4_1_1" PORT="I2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S1" SIGIS="undef" SIGNAME="External_Ports_S1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_1_0" PORT="S1"/>
+        <CONNECTION INSTANCE="MUX_4_1_1" PORT="S1"/>
+        <CONNECTION INSTANCE="MUX_4_1_2" PORT="S1"/>
+        <CONNECTION INSTANCE="MUX_4_1_3" PORT="S1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S0" SIGIS="undef" SIGNAME="External_Ports_S0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_1_0" PORT="S_0"/>
+        <CONNECTION INSTANCE="MUX_4_1_1" PORT="S_0"/>
+        <CONNECTION INSTANCE="MUX_4_1_2" PORT="S_0"/>
+        <CONNECTION INSTANCE="MUX_4_1_3" PORT="S_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Mux_out_0" SIGIS="undef" SIGNAME="MUX_4_1_0_Mux_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_1_0" PORT="Mux_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Mux_out_1" SIGIS="undef" SIGNAME="MUX_4_1_1_Mux_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_1_1" PORT="Mux_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Mux_out_2" SIGIS="undef" SIGNAME="MUX_4_1_2_Mux_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_1_2" PORT="Mux_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Mux_out_3" SIGIS="undef" SIGNAME="MUX_4_1_3_Mux_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUX_4_1_3" PORT="Mux_out"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/MUX_4_1_0" HWVERSION="1.0" INSTANCE="MUX_4_1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX_4_1" VLNV="xilinx.com:user:MUX_4_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="barrel_shifter_4_bit_MUX_4_1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="I0" SIGIS="undef" SIGNAME="External_Ports_I0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I1" SIGIS="undef" SIGNAME="External_Ports_I1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I2" SIGIS="undef" SIGNAME="External_Ports_I2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I3" SIGIS="undef" SIGNAME="External_Ports_I3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Mux_out" SIGIS="undef" SIGNAME="MUX_4_1_0_Mux_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Mux_out_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S1" SIGIS="undef" SIGNAME="External_Ports_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_0" SIGIS="undef" SIGNAME="External_Ports_S0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/MUX_4_1_1" HWVERSION="1.0" INSTANCE="MUX_4_1_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX_4_1" VLNV="xilinx.com:user:MUX_4_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="barrel_shifter_4_bit_MUX_4_1_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="I0" SIGIS="undef" SIGNAME="External_Ports_I1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I1" SIGIS="undef" SIGNAME="External_Ports_I2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I2" SIGIS="undef" SIGNAME="External_Ports_I3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I3" SIGIS="undef" SIGNAME="External_Ports_I0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Mux_out" SIGIS="undef" SIGNAME="MUX_4_1_1_Mux_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Mux_out_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S1" SIGIS="undef" SIGNAME="External_Ports_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_0" SIGIS="undef" SIGNAME="External_Ports_S0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/MUX_4_1_2" HWVERSION="1.0" INSTANCE="MUX_4_1_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX_4_1" VLNV="xilinx.com:user:MUX_4_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="barrel_shifter_4_bit_MUX_4_1_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="I0" SIGIS="undef" SIGNAME="External_Ports_I2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I1" SIGIS="undef" SIGNAME="External_Ports_I3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I2" SIGIS="undef" SIGNAME="External_Ports_I0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I3" SIGIS="undef" SIGNAME="External_Ports_I1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Mux_out" SIGIS="undef" SIGNAME="MUX_4_1_2_Mux_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Mux_out_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S1" SIGIS="undef" SIGNAME="External_Ports_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_0" SIGIS="undef" SIGNAME="External_Ports_S0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/MUX_4_1_3" HWVERSION="1.0" INSTANCE="MUX_4_1_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX_4_1" VLNV="xilinx.com:user:MUX_4_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="barrel_shifter_4_bit_MUX_4_1_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="I0" SIGIS="undef" SIGNAME="External_Ports_I3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I1" SIGIS="undef" SIGNAME="External_Ports_I0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I2" SIGIS="undef" SIGNAME="External_Ports_I1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="I3" SIGIS="undef" SIGNAME="External_Ports_I2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Mux_out" SIGIS="undef" SIGNAME="MUX_4_1_3_Mux_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Mux_out_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S1" SIGIS="undef" SIGNAME="External_Ports_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_0" SIGIS="undef" SIGNAME="External_Ports_S0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1717249938">
+  <File Type="PA-TCL" Name="ripple_carry_adder_4bit_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="ripple_carry_adder_4bit_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ripple_carry_adder_4bit_wrapper.vds"/>
+  <File Type="RDS-DCP" Name="ripple_carry_adder_4bit_wrapper.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/fa.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ripple_carry_adder_4bit/ripple_carry_adder_4bit.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ripple_carry_adder_4bit/hdl/ripple_carry_adder_4bit_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dff.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/shift_reg/shift_reg.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/shift_reg/hdl/shift_reg_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/Mux_8_1/Mux_8_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux_2_1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux_16_1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/Mux_8_1/hdl/Mux_8_1_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ripple_carry_adder_4bit_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Mux_8_1_Mux_2_1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Mux_8_1_Mux_2_1_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="Mux_8_1_Mux_2_1_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="shift_reg_dff_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Mux_8_1_Mux_2_1_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="ripple_carry_adder_4bit_fa_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="shift_reg_dff_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="Mux_8_1_Mux_2_1_0_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="Mux_8_1_Mux_2_1_0_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="Mux_8_1_Mux_2_1_0_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="ripple_carry_adder_4bit_fa_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="shift_reg_dff_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="ripple_carry_adder_4bit_fa_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="shift_reg_dff_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="ripple_carry_adder_4bit_fa_0_3"/>
+</GenRun>

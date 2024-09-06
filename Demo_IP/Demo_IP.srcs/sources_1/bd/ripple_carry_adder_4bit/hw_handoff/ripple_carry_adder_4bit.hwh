@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Jun  1 19:17:44 2024" VIVADOVERSION="2019.1">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.1" DEVICE="7z010" NAME="ripple_carry_adder_4bit" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="3" NAME="a_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hier_0_xlslice_1" PORT="Din"/>
+        <CONNECTION INSTANCE="hier_0_xlslice_2" PORT="Din"/>
+        <CONNECTION INSTANCE="hier_0_xlslice_3" PORT="Din"/>
+        <CONNECTION INSTANCE="hier_0_xlslice_0" PORT="Din"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="b_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hier_1_xlslice_5" PORT="Din"/>
+        <CONNECTION INSTANCE="hier_1_xlslice_7" PORT="Din"/>
+        <CONNECTION INSTANCE="hier_1_xlslice_6" PORT="Din"/>
+        <CONNECTION INSTANCE="hier_1_xlslice_4" PORT="Din"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="fa_0_cout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fa_0" PORT="cout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="Sout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="cin" SIGIS="undef" SIGNAME="External_Ports_cin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fa_2" PORT="cin"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/fa_0" HWVERSION="1.0" INSTANCE="fa_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fa" VLNV="xilinx.com:module_ref:fa:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_fa_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="hier_0_xlslice_3_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_xlslice_3" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="hier_1_xlslice_6_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_1_xlslice_6" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cin" SIGIS="undef" SIGNAME="fa_1_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_1" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="fa_0_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sout" SIGIS="undef" SIGNAME="fa_0_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/fa_1" HWVERSION="1.0" INSTANCE="fa_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fa" VLNV="xilinx.com:module_ref:fa:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_fa_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="hier_0_xlslice_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_xlslice_2" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="hier_1_xlslice_7_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_1_xlslice_7" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cin" SIGIS="undef" SIGNAME="fa_3_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_3" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="fa_1_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_0" PORT="cin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sout" SIGIS="undef" SIGNAME="fa_1_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/fa_2" HWVERSION="1.0" INSTANCE="fa_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fa" VLNV="xilinx.com:module_ref:fa:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_fa_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="hier_0_xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_xlslice_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="hier_1_xlslice_4_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_1_xlslice_4" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cin" SIGIS="undef" SIGNAME="External_Ports_cin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="fa_2_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_3" PORT="cin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sout" SIGIS="undef" SIGNAME="fa_2_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/fa_3" HWVERSION="1.0" INSTANCE="fa_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fa" VLNV="xilinx.com:module_ref:fa:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_fa_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="hier_0_xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_xlslice_1" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="hier_1_xlslice_5_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_1_xlslice_5" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cin" SIGIS="undef" SIGNAME="fa_2_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_2" PORT="cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cout" SIGIS="undef" SIGNAME="fa_3_cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_1" PORT="cin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sout" SIGIS="undef" SIGNAME="fa_3_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/hier_0/xlslice_0" HWVERSION="1.0" INSTANCE="hier_0_xlslice_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="0"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_xlslice_0_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_2" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/hier_0/xlslice_1" HWVERSION="1.0" INSTANCE="hier_0_xlslice_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="1"/>
+        <PARAMETER NAME="DIN_TO" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_xlslice_0_1"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_3" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/hier_0/xlslice_2" HWVERSION="1.0" INSTANCE="hier_0_xlslice_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="2"/>
+        <PARAMETER NAME="DIN_TO" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_xlslice_0_2"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_xlslice_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_1" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/hier_0/xlslice_3" HWVERSION="1.0" INSTANCE="hier_0_xlslice_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
+        <PARAMETER NAME="DIN_TO" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_xlslice_0_3"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_xlslice_3_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/hier_1/xlslice_4" HWVERSION="1.0" INSTANCE="hier_1_xlslice_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="0"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_xlslice_0_4"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="hier_1_xlslice_4_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_2" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/hier_1/xlslice_5" HWVERSION="1.0" INSTANCE="hier_1_xlslice_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="1"/>
+        <PARAMETER NAME="DIN_TO" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_xlslice_1_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="hier_1_xlslice_5_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_3" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/hier_1/xlslice_6" HWVERSION="1.0" INSTANCE="hier_1_xlslice_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="2"/>
+        <PARAMETER NAME="DIN_TO" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_xlslice_2_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="hier_1_xlslice_6_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_0" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/hier_1/xlslice_7" HWVERSION="1.0" INSTANCE="hier_1_xlslice_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
+        <PARAMETER NAME="DIN_TO" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_xlslice_3_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="hier_1_xlslice_7_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_1" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_0" HWVERSION="2.1" INSTANCE="xlconcat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="4"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="ripple_carry_adder_4bit_xlconcat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="fa_2_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_2" PORT="sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="fa_3_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_3" PORT="sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In2" RIGHT="0" SIGIS="undef" SIGNAME="fa_1_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_1" PORT="sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In3" RIGHT="0" SIGIS="undef" SIGNAME="fa_0_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fa_0" PORT="sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Sout"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

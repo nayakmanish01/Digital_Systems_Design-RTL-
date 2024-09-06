@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"ripple_carry_adder_4bit": {
+			"proto_instances": {
+			}
+		}
+	}
+}

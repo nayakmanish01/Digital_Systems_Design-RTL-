@@ -1,0 +1,247 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA7320AD5A7320AD5",
+      "device": "xc7z010clg400-1",
+      "name": "barrel_shifter_4_bit",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1"
+    },
+    "design_tree": {
+      "Left_Right_Barrel_shifter": {
+        "MUX_4_1_0": "",
+        "MUX_4_1_1": "",
+        "MUX_4_1_3": "",
+        "MUX_4_1_2": ""
+      }
+    },
+    "ports": {
+      "I0": {
+        "direction": "I"
+      },
+      "I1": {
+        "direction": "I"
+      },
+      "I2": {
+        "direction": "I"
+      },
+      "I3": {
+        "direction": "I"
+      },
+      "S1": {
+        "direction": "I"
+      },
+      "S0": {
+        "direction": "I"
+      },
+      "Mux_out_0": {
+        "direction": "O"
+      },
+      "Mux_out_1": {
+        "direction": "O"
+      },
+      "Mux_out_2": {
+        "direction": "O"
+      },
+      "Mux_out_3": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "Left_Right_Barrel_shifter": {
+        "ports": {
+          "I0": {
+            "direction": "I"
+          },
+          "I1": {
+            "direction": "I"
+          },
+          "I2": {
+            "direction": "I"
+          },
+          "I3": {
+            "direction": "I"
+          },
+          "Mux_out_0": {
+            "direction": "O"
+          },
+          "S1": {
+            "direction": "I"
+          },
+          "S0": {
+            "direction": "I"
+          },
+          "Mux_out_1": {
+            "direction": "O"
+          },
+          "Mux_out_3": {
+            "direction": "O"
+          },
+          "Mux_out_2": {
+            "direction": "O"
+          }
+        },
+        "components": {
+          "MUX_4_1_0": {
+            "vlnv": "xilinx.com:user:MUX_4_1:1.0",
+            "xci_name": "barrel_shifter_4_bit_MUX_4_1_0_0"
+          },
+          "MUX_4_1_1": {
+            "vlnv": "xilinx.com:user:MUX_4_1:1.0",
+            "xci_name": "barrel_shifter_4_bit_MUX_4_1_0_1"
+          },
+          "MUX_4_1_3": {
+            "vlnv": "xilinx.com:user:MUX_4_1:1.0",
+            "xci_name": "barrel_shifter_4_bit_MUX_4_1_0_3"
+          },
+          "MUX_4_1_2": {
+            "vlnv": "xilinx.com:user:MUX_4_1:1.0",
+            "xci_name": "barrel_shifter_4_bit_MUX_4_1_0_2"
+          }
+        },
+        "nets": {
+          "Net2": {
+            "ports": [
+              "I0",
+              "MUX_4_1_3/I1",
+              "MUX_4_1_2/I2",
+              "MUX_4_1_1/I3",
+              "MUX_4_1_0/I0"
+            ]
+          },
+          "Net": {
+            "ports": [
+              "I1",
+              "MUX_4_1_3/I2",
+              "MUX_4_1_2/I3",
+              "MUX_4_1_1/I0",
+              "MUX_4_1_0/I1"
+            ]
+          },
+          "Net1": {
+            "ports": [
+              "I2",
+              "MUX_4_1_3/I3",
+              "MUX_4_1_1/I1",
+              "MUX_4_1_2/I0",
+              "MUX_4_1_0/I2"
+            ]
+          },
+          "Net3": {
+            "ports": [
+              "I3",
+              "MUX_4_1_3/I0",
+              "MUX_4_1_2/I1",
+              "MUX_4_1_1/I2",
+              "MUX_4_1_0/I3"
+            ]
+          },
+          "MUX_4_1_0_Mux_out": {
+            "ports": [
+              "MUX_4_1_0/Mux_out",
+              "Mux_out_0"
+            ]
+          },
+          "S1_0_1": {
+            "ports": [
+              "S1",
+              "MUX_4_1_1/S1",
+              "MUX_4_1_2/S1",
+              "MUX_4_1_3/S1",
+              "MUX_4_1_0/S1"
+            ]
+          },
+          "S_0_0_1": {
+            "ports": [
+              "S0",
+              "MUX_4_1_1/S_0",
+              "MUX_4_1_2/S_0",
+              "MUX_4_1_3/S_0",
+              "MUX_4_1_0/S_0"
+            ]
+          },
+          "MUX_4_1_1_Mux_out": {
+            "ports": [
+              "MUX_4_1_1/Mux_out",
+              "Mux_out_1"
+            ]
+          },
+          "MUX_4_1_3_Mux_out": {
+            "ports": [
+              "MUX_4_1_3/Mux_out",
+              "Mux_out_3"
+            ]
+          },
+          "MUX_4_1_2_Mux_out": {
+            "ports": [
+              "MUX_4_1_2/Mux_out",
+              "Mux_out_2"
+            ]
+          }
+        }
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "I1",
+          "Left_Right_Barrel_shifter/I1"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "I2",
+          "Left_Right_Barrel_shifter/I2"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "I0",
+          "Left_Right_Barrel_shifter/I0"
+        ]
+      },
+      "Net3": {
+        "ports": [
+          "I3",
+          "Left_Right_Barrel_shifter/I3"
+        ]
+      },
+      "S1_0_1": {
+        "ports": [
+          "S1",
+          "Left_Right_Barrel_shifter/S1"
+        ]
+      },
+      "S_0_0_1": {
+        "ports": [
+          "S0",
+          "Left_Right_Barrel_shifter/S0"
+        ]
+      },
+      "MUX_4_1_0_Mux_out": {
+        "ports": [
+          "Left_Right_Barrel_shifter/Mux_out_0",
+          "Mux_out_0"
+        ]
+      },
+      "MUX_4_1_1_Mux_out": {
+        "ports": [
+          "Left_Right_Barrel_shifter/Mux_out_1",
+          "Mux_out_1"
+        ]
+      },
+      "MUX_4_1_2_Mux_out": {
+        "ports": [
+          "Left_Right_Barrel_shifter/Mux_out_2",
+          "Mux_out_2"
+        ]
+      },
+      "MUX_4_1_3_Mux_out": {
+        "ports": [
+          "Left_Right_Barrel_shifter/Mux_out_3",
+          "Mux_out_3"
+        ]
+      }
+    }
+  }
+}

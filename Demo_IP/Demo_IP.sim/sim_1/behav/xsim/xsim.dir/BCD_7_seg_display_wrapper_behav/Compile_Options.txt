@@ -1,0 +1,1 @@
+-wto "ecf68539bf3d451bb811f08265cced1a" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "xlslice_v1_0_2" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "BCD_7_seg_display_wrapper_behav" "xil_defaultlib.BCD_7_seg_display_wrapper" "xil_defaultlib.glbl" -log "elaborate.log" 

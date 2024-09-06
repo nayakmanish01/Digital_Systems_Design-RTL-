@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Aug  6 17:15:00 2024
+# Process ID: 20468
+# Current directory: D:/B.Tech/RTL_resources/verilog FPGA course Projects/seq_components2/seq_components2.runs/synth_1
+# Command line: vivado.exe -log fsm_2_procc_moore.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fsm_2_procc_moore.tcl
+# Log file: D:/B.Tech/RTL_resources/verilog FPGA course Projects/seq_components2/seq_components2.runs/synth_1/fsm_2_procc_moore.vds
+# Journal file: D:/B.Tech/RTL_resources/verilog FPGA course Projects/seq_components2/seq_components2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fsm_2_procc_moore.tcl -notrace

@@ -1,0 +1,67 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ecf68539bf3d451bb811f08265cced1a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_6 -L xlslice_v1_0_2 -L xlconcat_v2_1_3 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot barrel_shifter_8_bit_wrapper_behav xil_defaultlib.barrel_shifter_8_bit_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Mux_2_1
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_0_0
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_0_1
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_2_0
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_3_0
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_4_0
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_5_0
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_6_0
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_7_0
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_0_9
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_1_1
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_10_...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_11_...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_0_2
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_12_...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_13_...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_14_...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_15_...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_2_1
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_3_1
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_4_1
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_5_1
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_6_1
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_7_1
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_0_3
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_8_0
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_9_0
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_0_4
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_0_5
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_0_6
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_0_7
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_0_8
+Compiling module xil_defaultlib.barrel_shifter_8_bit_Mux_2_1_1_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_xlslice_0_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_xlslice_0_1
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_xlslice_0_2
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_xlslice_2_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_xlslice_2_1
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_xlslice_2_2
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_xlslice_5_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_xlslice_5_1
+Compiling module xil_defaultlib.input_split_imp_AE0FWQ
+Compiling module xlconcat_v2_1_3.xlconcat_v2_1_3_xlconcat(dout_wi...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_xlconcat_0_...
+Compiling module xlconstant_v1_1_6.xlconstant_v1_1_6_xlconstant(CON...
+Compiling module xil_defaultlib.barrel_shifter_8_bit_xlconstant_...
+Compiling module xil_defaultlib.barrel_shifter_8_bit
+Compiling module xil_defaultlib.barrel_shifter_8_bit_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot barrel_shifter_8_bit_wrapper_behav

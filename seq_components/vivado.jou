@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 23 11:48:01 2024
+# Process ID: 14464
+# Current directory: D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8140 D:\B.Tech\RTL resources\verilog FPGA course Projects\seq_components\seq_components.xpr
+# Log file: D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/vivado.log
+# Journal file: D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/mod_counter_tb.v} w ]
+add_files -fileset sim_1 {{D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/mod_counter_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation

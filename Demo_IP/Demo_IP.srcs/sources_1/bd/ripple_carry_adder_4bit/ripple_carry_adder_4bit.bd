@@ -1,0 +1,567 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x20190BE4C6E0EA7E",
+      "device": "xc7z010clg400-1",
+      "name": "ripple_carry_adder_4bit",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "fa_0": "",
+      "fa_1": "",
+      "fa_2": "",
+      "fa_3": "",
+      "hier_0": {
+        "xlslice_0": "",
+        "xlslice_1": "",
+        "xlslice_2": "",
+        "xlslice_3": ""
+      },
+      "hier_1": {
+        "xlslice_4": "",
+        "xlslice_5": "",
+        "xlslice_7": "",
+        "xlslice_6": ""
+      },
+      "xlconcat_0": ""
+    },
+    "ports": {
+      "a_in": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "b_in": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "cout": {
+        "direction": "O"
+      },
+      "Sout": {
+        "direction": "O",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "4",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "cin": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "fa_0": {
+        "vlnv": "xilinx.com:module_ref:fa:1.0",
+        "xci_name": "ripple_carry_adder_4bit_fa_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fa",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "cin": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sout": {
+            "direction": "O"
+          }
+        }
+      },
+      "fa_1": {
+        "vlnv": "xilinx.com:module_ref:fa:1.0",
+        "xci_name": "ripple_carry_adder_4bit_fa_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fa",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "cin": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sout": {
+            "direction": "O"
+          }
+        }
+      },
+      "fa_2": {
+        "vlnv": "xilinx.com:module_ref:fa:1.0",
+        "xci_name": "ripple_carry_adder_4bit_fa_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fa",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "cin": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sout": {
+            "direction": "O"
+          }
+        }
+      },
+      "fa_3": {
+        "vlnv": "xilinx.com:module_ref:fa:1.0",
+        "xci_name": "ripple_carry_adder_4bit_fa_0_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fa",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "cin": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sout": {
+            "direction": "O"
+          }
+        }
+      },
+      "hier_0": {
+        "ports": {
+          "a_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Dout": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "Dout1": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "Dout2": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "Dout3": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        },
+        "components": {
+          "xlslice_0": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "ripple_carry_adder_4bit_xlslice_0_0",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "0"
+              },
+              "DIN_TO": {
+                "value": "0"
+              },
+              "DIN_WIDTH": {
+                "value": "4"
+              }
+            }
+          },
+          "xlslice_1": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "ripple_carry_adder_4bit_xlslice_0_1",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "1"
+              },
+              "DIN_TO": {
+                "value": "1"
+              },
+              "DIN_WIDTH": {
+                "value": "4"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlslice_2": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "ripple_carry_adder_4bit_xlslice_0_2",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "2"
+              },
+              "DIN_TO": {
+                "value": "2"
+              },
+              "DIN_WIDTH": {
+                "value": "4"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlslice_3": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "ripple_carry_adder_4bit_xlslice_0_3",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "3"
+              },
+              "DIN_TO": {
+                "value": "3"
+              },
+              "DIN_WIDTH": {
+                "value": "4"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "nets": {
+          "a_in_1": {
+            "ports": [
+              "a_in",
+              "xlslice_1/Din",
+              "xlslice_2/Din",
+              "xlslice_3/Din",
+              "xlslice_0/Din"
+            ]
+          },
+          "xlslice_0_Dout": {
+            "ports": [
+              "xlslice_0/Dout",
+              "Dout"
+            ]
+          },
+          "xlslice_1_Dout": {
+            "ports": [
+              "xlslice_1/Dout",
+              "Dout1"
+            ]
+          },
+          "xlslice_2_Dout": {
+            "ports": [
+              "xlslice_2/Dout",
+              "Dout2"
+            ]
+          },
+          "xlslice_3_Dout": {
+            "ports": [
+              "xlslice_3/Dout",
+              "Dout3"
+            ]
+          }
+        }
+      },
+      "hier_1": {
+        "ports": {
+          "b_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Dout": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "Dout1": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "Dout2": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "Dout3": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        },
+        "components": {
+          "xlslice_4": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "ripple_carry_adder_4bit_xlslice_0_4",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "0"
+              },
+              "DIN_TO": {
+                "value": "0"
+              },
+              "DIN_WIDTH": {
+                "value": "4"
+              }
+            }
+          },
+          "xlslice_5": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "ripple_carry_adder_4bit_xlslice_1_0",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "1"
+              },
+              "DIN_TO": {
+                "value": "1"
+              },
+              "DIN_WIDTH": {
+                "value": "4"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlslice_7": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "ripple_carry_adder_4bit_xlslice_3_0",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "3"
+              },
+              "DIN_TO": {
+                "value": "3"
+              },
+              "DIN_WIDTH": {
+                "value": "4"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlslice_6": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "ripple_carry_adder_4bit_xlslice_2_0",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "2"
+              },
+              "DIN_TO": {
+                "value": "2"
+              },
+              "DIN_WIDTH": {
+                "value": "4"
+              },
+              "DOUT_WIDTH": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "nets": {
+          "b_in_1": {
+            "ports": [
+              "b_in",
+              "xlslice_5/Din",
+              "xlslice_7/Din",
+              "xlslice_6/Din",
+              "xlslice_4/Din"
+            ]
+          },
+          "xlslice_4_Dout": {
+            "ports": [
+              "xlslice_4/Dout",
+              "Dout"
+            ]
+          },
+          "xlslice_5_Dout": {
+            "ports": [
+              "xlslice_5/Dout",
+              "Dout1"
+            ]
+          },
+          "xlslice_7_Dout": {
+            "ports": [
+              "xlslice_7/Dout",
+              "Dout2"
+            ]
+          },
+          "xlslice_6_Dout": {
+            "ports": [
+              "xlslice_6/Dout",
+              "Dout3"
+            ]
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "ripple_carry_adder_4bit_xlconcat_0_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      }
+    },
+    "nets": {
+      "fa_2_cout": {
+        "ports": [
+          "fa_2/cout",
+          "fa_3/cin"
+        ]
+      },
+      "fa_3_cout": {
+        "ports": [
+          "fa_3/cout",
+          "fa_1/cin"
+        ]
+      },
+      "fa_1_cout": {
+        "ports": [
+          "fa_1/cout",
+          "fa_0/cin"
+        ]
+      },
+      "a_in_1": {
+        "ports": [
+          "a_in",
+          "hier_0/a_in"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "hier_0/Dout",
+          "fa_2/a"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "hier_0/Dout1",
+          "fa_3/a"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "hier_0/Dout2",
+          "fa_1/a"
+        ]
+      },
+      "xlslice_3_Dout": {
+        "ports": [
+          "hier_0/Dout3",
+          "fa_0/a"
+        ]
+      },
+      "b_in_1": {
+        "ports": [
+          "b_in",
+          "hier_1/b_in"
+        ]
+      },
+      "xlslice_4_Dout": {
+        "ports": [
+          "hier_1/Dout",
+          "fa_2/b"
+        ]
+      },
+      "xlslice_5_Dout": {
+        "ports": [
+          "hier_1/Dout1",
+          "fa_3/b"
+        ]
+      },
+      "xlslice_7_Dout": {
+        "ports": [
+          "hier_1/Dout2",
+          "fa_1/b"
+        ]
+      },
+      "xlslice_6_Dout": {
+        "ports": [
+          "hier_1/Dout3",
+          "fa_0/b"
+        ]
+      },
+      "fa_2_sout": {
+        "ports": [
+          "fa_2/sout",
+          "xlconcat_0/In0"
+        ]
+      },
+      "fa_3_sout": {
+        "ports": [
+          "fa_3/sout",
+          "xlconcat_0/In1"
+        ]
+      },
+      "fa_1_sout": {
+        "ports": [
+          "fa_1/sout",
+          "xlconcat_0/In2"
+        ]
+      },
+      "fa_0_sout": {
+        "ports": [
+          "fa_0/sout",
+          "xlconcat_0/In3"
+        ]
+      },
+      "fa_0_cout": {
+        "ports": [
+          "fa_0/cout",
+          "cout"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "Sout"
+        ]
+      },
+      "cin_0_1": {
+        "ports": [
+          "cin",
+          "fa_2/cin"
+        ]
+      }
+    }
+  }
+}

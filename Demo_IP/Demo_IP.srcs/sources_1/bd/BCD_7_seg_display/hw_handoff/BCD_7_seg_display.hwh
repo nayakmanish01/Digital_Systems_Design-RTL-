@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep  5 16:40:00 2024" VIVADOVERSION="2019.1">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.1" DEVICE="7z010" NAME="BCD_7_seg_display" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="3" NAME="Bin" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_Bin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD_to_7_seg_0" PORT="bin"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_0_Dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bus_split_xlslice_0" PORT="Dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_1_Dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bus_split_xlslice_1" PORT="Dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="c" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_2_Dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bus_split_xlslice_2" PORT="Dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="d" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_3_Dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bus_split_xlslice_3" PORT="Dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="e" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_4_Dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bus_split_xlslice_4" PORT="Dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="f" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_5_Dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bus_split_xlslice_5" PORT="Dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="g" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_6_Dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bus_split_xlslice_6" PORT="Dout"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/BCD_to_7_seg_0" HWVERSION="1.0" INSTANCE="BCD_to_7_seg_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BCD_to_7_seg" VLNV="xilinx.com:user:BCD_to_7_seg:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="ZERO" VALUE="&quot;0000&quot;"/>
+        <PARAMETER NAME="ONE" VALUE="&quot;0001&quot;"/>
+        <PARAMETER NAME="TWO" VALUE="&quot;0010&quot;"/>
+        <PARAMETER NAME="THREE" VALUE="&quot;0011&quot;"/>
+        <PARAMETER NAME="FOUR" VALUE="&quot;0100&quot;"/>
+        <PARAMETER NAME="FIVE" VALUE="&quot;0101&quot;"/>
+        <PARAMETER NAME="SIX" VALUE="&quot;0110&quot;"/>
+        <PARAMETER NAME="SEVEN" VALUE="&quot;0111&quot;"/>
+        <PARAMETER NAME="EIGHT" VALUE="&quot;1000&quot;"/>
+        <PARAMETER NAME="NINE" VALUE="&quot;1001&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="BCD_7_seg_display_BCD_to_7_seg_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="bin" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Bin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Bin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="sout" RIGHT="0" SIGIS="undef" SIGNAME="BCD_to_7_seg_0_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bus_split_xlslice_0" PORT="Din"/>
+            <CONNECTION INSTANCE="bus_split_xlslice_2" PORT="Din"/>
+            <CONNECTION INSTANCE="bus_split_xlslice_3" PORT="Din"/>
+            <CONNECTION INSTANCE="bus_split_xlslice_4" PORT="Din"/>
+            <CONNECTION INSTANCE="bus_split_xlslice_5" PORT="Din"/>
+            <CONNECTION INSTANCE="bus_split_xlslice_6" PORT="Din"/>
+            <CONNECTION INSTANCE="bus_split_xlslice_1" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/bus_split/xlslice_0" HWVERSION="1.0" INSTANCE="bus_split_xlslice_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="6"/>
+        <PARAMETER NAME="DIN_TO" VALUE="6"/>
+        <PARAMETER NAME="Component_Name" VALUE="BCD_7_seg_display_xlslice_0_2"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="6" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="BCD_to_7_seg_0_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD_to_7_seg_0" PORT="sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/bus_split/xlslice_1" HWVERSION="1.0" INSTANCE="bus_split_xlslice_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="5"/>
+        <PARAMETER NAME="DIN_TO" VALUE="5"/>
+        <PARAMETER NAME="Component_Name" VALUE="BCD_7_seg_display_xlslice_0_3"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="6" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="BCD_to_7_seg_0_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD_to_7_seg_0" PORT="sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/bus_split/xlslice_2" HWVERSION="1.0" INSTANCE="bus_split_xlslice_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="4"/>
+        <PARAMETER NAME="DIN_TO" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="BCD_7_seg_display_xlslice_0_4"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="6" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="BCD_to_7_seg_0_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD_to_7_seg_0" PORT="sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/bus_split/xlslice_3" HWVERSION="1.0" INSTANCE="bus_split_xlslice_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
+        <PARAMETER NAME="DIN_TO" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="BCD_7_seg_display_xlslice_0_5"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="6" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="BCD_to_7_seg_0_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD_to_7_seg_0" PORT="sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_3_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/bus_split/xlslice_4" HWVERSION="1.0" INSTANCE="bus_split_xlslice_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="2"/>
+        <PARAMETER NAME="DIN_TO" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="BCD_7_seg_display_xlslice_0_6"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="6" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="BCD_to_7_seg_0_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD_to_7_seg_0" PORT="sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_4_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="e"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/bus_split/xlslice_5" HWVERSION="1.0" INSTANCE="bus_split_xlslice_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="1"/>
+        <PARAMETER NAME="DIN_TO" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="BCD_7_seg_display_xlslice_0_7"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="6" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="BCD_to_7_seg_0_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD_to_7_seg_0" PORT="sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_5_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="f"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/bus_split/xlslice_6" HWVERSION="1.0" INSTANCE="bus_split_xlslice_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="0"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="BCD_7_seg_display_xlslice_0_8"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="6" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="BCD_to_7_seg_0_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD_to_7_seg_0" PORT="sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="bus_split_xlslice_6_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun  1 18:22:51 2024
+# Process ID: 5264
+# Current directory: D:/B.Tech/RTL_resources/verilog FPGA course Projects/Demo_IP/Demo_IP.runs/shift_reg_dff_0_0_synth_1
+# Command line: vivado.exe -log shift_reg_dff_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source shift_reg_dff_0_0.tcl
+# Log file: D:/B.Tech/RTL_resources/verilog FPGA course Projects/Demo_IP/Demo_IP.runs/shift_reg_dff_0_0_synth_1/shift_reg_dff_0_0.vds
+# Journal file: D:/B.Tech/RTL_resources/verilog FPGA course Projects/Demo_IP/Demo_IP.runs/shift_reg_dff_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source shift_reg_dff_0_0.tcl -notrace

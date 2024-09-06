@@ -1,0 +1,203 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3F4FC3AE3F4FC3AE",
+      "device": "xc7z010clg400-1",
+      "name": "Mux_8_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Mux_2_1_0": "",
+      "Mux_2_1_1": "",
+      "Mux_2_1_2": "",
+      "Mux_2_1_3": "",
+      "Mux_2_1_4": "",
+      "Mux_2_1_5": "",
+      "Mux_2_1_6": ""
+    },
+    "ports": {
+      "S_0": {
+        "direction": "I"
+      },
+      "S_1": {
+        "direction": "I"
+      },
+      "S_2": {
+        "direction": "I"
+      },
+      "I_0": {
+        "direction": "O"
+      },
+      "A_0": {
+        "direction": "I"
+      },
+      "B_0": {
+        "direction": "I"
+      },
+      "A_1": {
+        "direction": "I"
+      },
+      "B_1": {
+        "direction": "I"
+      },
+      "A_2": {
+        "direction": "I"
+      },
+      "B_2": {
+        "direction": "I"
+      },
+      "A_3": {
+        "direction": "I"
+      },
+      "B_3": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Mux_2_1_0": {
+        "vlnv": "xilinx.com:user:Mux_2_1:1.0",
+        "xci_name": "Mux_8_1_Mux_2_1_0_0"
+      },
+      "Mux_2_1_1": {
+        "vlnv": "xilinx.com:user:Mux_2_1:1.0",
+        "xci_name": "Mux_8_1_Mux_2_1_0_1"
+      },
+      "Mux_2_1_2": {
+        "vlnv": "xilinx.com:user:Mux_2_1:1.0",
+        "xci_name": "Mux_8_1_Mux_2_1_0_2"
+      },
+      "Mux_2_1_3": {
+        "vlnv": "xilinx.com:user:Mux_2_1:1.0",
+        "xci_name": "Mux_8_1_Mux_2_1_0_3"
+      },
+      "Mux_2_1_4": {
+        "vlnv": "xilinx.com:user:Mux_2_1:1.0",
+        "xci_name": "Mux_8_1_Mux_2_1_0_4"
+      },
+      "Mux_2_1_5": {
+        "vlnv": "xilinx.com:user:Mux_2_1:1.0",
+        "xci_name": "Mux_8_1_Mux_2_1_0_5"
+      },
+      "Mux_2_1_6": {
+        "vlnv": "xilinx.com:user:Mux_2_1:1.0",
+        "xci_name": "Mux_8_1_Mux_2_1_0_6"
+      }
+    },
+    "nets": {
+      "Mux_2_1_0_I": {
+        "ports": [
+          "Mux_2_1_0/I",
+          "Mux_2_1_5/A"
+        ]
+      },
+      "Mux_2_1_1_I": {
+        "ports": [
+          "Mux_2_1_1/I",
+          "Mux_2_1_5/B"
+        ]
+      },
+      "Mux_2_1_2_I": {
+        "ports": [
+          "Mux_2_1_2/I",
+          "Mux_2_1_4/A"
+        ]
+      },
+      "Mux_2_1_3_I": {
+        "ports": [
+          "Mux_2_1_3/I",
+          "Mux_2_1_4/B"
+        ]
+      },
+      "Mux_2_1_5_I": {
+        "ports": [
+          "Mux_2_1_5/I",
+          "Mux_2_1_6/A"
+        ]
+      },
+      "Mux_2_1_4_I": {
+        "ports": [
+          "Mux_2_1_4/I",
+          "Mux_2_1_6/B"
+        ]
+      },
+      "S_0_1": {
+        "ports": [
+          "S_0",
+          "Mux_2_1_3/S",
+          "Mux_2_1_2/S",
+          "Mux_2_1_1/S",
+          "Mux_2_1_0/S"
+        ]
+      },
+      "S_1_1": {
+        "ports": [
+          "S_1",
+          "Mux_2_1_4/S",
+          "Mux_2_1_5/S"
+        ]
+      },
+      "S_2_1": {
+        "ports": [
+          "S_2",
+          "Mux_2_1_6/S"
+        ]
+      },
+      "Mux_2_1_6_I": {
+        "ports": [
+          "Mux_2_1_6/I",
+          "I_0"
+        ]
+      },
+      "A_0_1": {
+        "ports": [
+          "A_0",
+          "Mux_2_1_0/A"
+        ]
+      },
+      "B_0_1": {
+        "ports": [
+          "B_0",
+          "Mux_2_1_0/B"
+        ]
+      },
+      "A_1_1": {
+        "ports": [
+          "A_1",
+          "Mux_2_1_1/A"
+        ]
+      },
+      "B_1_1": {
+        "ports": [
+          "B_1",
+          "Mux_2_1_1/B"
+        ]
+      },
+      "A_2_1": {
+        "ports": [
+          "A_2",
+          "Mux_2_1_2/A"
+        ]
+      },
+      "B_2_1": {
+        "ports": [
+          "B_2",
+          "Mux_2_1_2/B"
+        ]
+      },
+      "A_3_1": {
+        "ports": [
+          "A_3",
+          "Mux_2_1_3/A"
+        ]
+      },
+      "B_3_1": {
+        "ports": [
+          "B_3",
+          "Mux_2_1_3/B"
+        ]
+      }
+    }
+  }
+}

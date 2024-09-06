@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Demo_IP.srcs/sources_1/new/dff.v" \
+"../../../../Demo_IP.ip_user_files/bd/shift_reg/ip/shift_reg_dff_0_0/sim/shift_reg_dff_0_0.v" \
+"../../../../Demo_IP.ip_user_files/bd/shift_reg/ip/shift_reg_dff_0_1/sim/shift_reg_dff_0_1.v" \
+"../../../../Demo_IP.ip_user_files/bd/shift_reg/ip/shift_reg_dff_0_2/sim/shift_reg_dff_0_2.v" \
+"../../../../Demo_IP.ip_user_files/bd/shift_reg/ip/shift_reg_dff_0_3/sim/shift_reg_dff_0_3.v" \
+"../../../../Demo_IP.ip_user_files/bd/shift_reg/sim/shift_reg.v" \
+"../../../../Demo_IP.srcs/sources_1/bd/shift_reg/hdl/shift_reg_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

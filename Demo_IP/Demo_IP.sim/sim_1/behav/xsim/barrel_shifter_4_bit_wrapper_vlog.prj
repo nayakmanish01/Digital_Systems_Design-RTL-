@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Demo_IP.ip_user_files/bd/barrel_shifter_4_bit/ip/barrel_shifter_4_bit_MUX_4_1_0_0/ipshared/3e67/Mux_2_1.v" \
+"../../../../Demo_IP.ip_user_files/bd/barrel_shifter_4_bit/ip/barrel_shifter_4_bit_MUX_4_1_0_0/src/MUX_4_1_Mux_2_1_0_0/sim/MUX_4_1_Mux_2_1_0_0.v" \
+"../../../../Demo_IP.ip_user_files/bd/barrel_shifter_4_bit/ip/barrel_shifter_4_bit_MUX_4_1_0_0/src/MUX_4_1_Mux_2_1_0_1/sim/MUX_4_1_Mux_2_1_0_1.v" \
+"../../../../Demo_IP.ip_user_files/bd/barrel_shifter_4_bit/ip/barrel_shifter_4_bit_MUX_4_1_0_0/src/MUX_4_1_Mux_2_1_0_2/sim/MUX_4_1_Mux_2_1_0_2.v" \
+"../../../../Demo_IP.ip_user_files/bd/barrel_shifter_4_bit/ipshared/51ae/sim/MUX_4_1.v" \
+"../../../../Demo_IP.ip_user_files/bd/barrel_shifter_4_bit/ip/barrel_shifter_4_bit_MUX_4_1_0_0/sim/barrel_shifter_4_bit_MUX_4_1_0_0.v" \
+"../../../../Demo_IP.ip_user_files/bd/barrel_shifter_4_bit/ip/barrel_shifter_4_bit_MUX_4_1_0_1/sim/barrel_shifter_4_bit_MUX_4_1_0_1.v" \
+"../../../../Demo_IP.ip_user_files/bd/barrel_shifter_4_bit/ip/barrel_shifter_4_bit_MUX_4_1_0_2/sim/barrel_shifter_4_bit_MUX_4_1_0_2.v" \
+"../../../../Demo_IP.ip_user_files/bd/barrel_shifter_4_bit/ip/barrel_shifter_4_bit_MUX_4_1_0_3/sim/barrel_shifter_4_bit_MUX_4_1_0_3.v" \
+"../../../../Demo_IP.ip_user_files/bd/barrel_shifter_4_bit/sim/barrel_shifter_4_bit.v" \
+"../../../../Demo_IP.srcs/sources_1/bd/barrel_shifter_4_bit/hdl/barrel_shifter_4_bit_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ripple_carry_adder_4bit_fa_0_1_synth_1" LaunchDir="D:/B.Tech/RTL_resources/verilog FPGA course Projects/Demo_IP/Demo_IP.runs/ripple_carry_adder_4bit_fa_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/B.Tech/RTL_resources/verilog FPGA course Projects/seq_components/seq_components.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/B.Tech/RTL_resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v,1725544038,verilog,,,,PISO_shift_reg_tb,,,,,,,,
+D:/B.Tech/RTL_resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sources_1/new/PISO_shift_reg.v,1725544694,verilog,,D:/B.Tech/RTL_resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v,,PISO_shift_reg,,,,,,,,
+D:/B.Tech/RTL_resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sources_1/new/mod_counter.v,1716454254,verilog,,,,mod_counter,,,,,,,,
+D:/B.Tech/RTL_resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sources_1/new/universal_shift_register.v,1716299849,verilog,,,,universal_shift_register,,,,,,,,

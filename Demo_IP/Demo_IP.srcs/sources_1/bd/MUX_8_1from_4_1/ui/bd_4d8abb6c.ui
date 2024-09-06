@@ -1,0 +1,38 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port I0 -pg 1 -lvl 0 -x -20 -y 250 -defaultsOSRD
+preplace port I1 -pg 1 -lvl 0 -x -20 -y 280 -defaultsOSRD
+preplace port I2 -pg 1 -lvl 0 -x -20 -y 310 -defaultsOSRD
+preplace port I3 -pg 1 -lvl 0 -x -20 -y 340 -defaultsOSRD
+preplace port I4 -pg 1 -lvl 0 -x -20 -y 50 -defaultsOSRD
+preplace port I5 -pg 1 -lvl 0 -x -20 -y 80 -defaultsOSRD
+preplace port I6 -pg 1 -lvl 0 -x -20 -y 110 -defaultsOSRD
+preplace port I7 -pg 1 -lvl 0 -x -20 -y 140 -defaultsOSRD
+preplace port S1 -pg 1 -lvl 0 -x -20 -y 370 -defaultsOSRD
+preplace port S0 -pg 1 -lvl 0 -x -20 -y 400 -defaultsOSRD
+preplace port S2 -pg 1 -lvl 0 -x -20 -y 220 -defaultsOSRD
+preplace port Mux_out -pg 1 -lvl 3 -x 380 -y 240 -defaultsOSRD
+preplace inst MUX_4_1_0 -pg 1 -lvl 1 -x 110 -y 330 -defaultsOSRD
+preplace inst MUX_4_1_1 -pg 1 -lvl 1 -x 110 -y 110 -defaultsOSRD
+preplace inst Mux_2_1_0 -pg 1 -lvl 2 -x 280 -y 240 -defaultsOSRD
+preplace netloc MUX_4_1_0_Mux_out 1 1 1 200 240n
+preplace netloc MUX_4_1_1_Mux_out 1 1 1 190 110n
+preplace netloc I0_1 1 0 1 10J 250n
+preplace netloc I1_1 1 0 1 0J 280n
+preplace netloc I2_1 1 0 1 0J 310n
+preplace netloc I3_1 1 0 1 NJ 340
+preplace netloc I4_1 1 0 1 0J 50n
+preplace netloc I5_1 1 0 1 NJ 80
+preplace netloc I6_1 1 0 1 0J 100n
+preplace netloc I7_1 1 0 1 0J 120n
+preplace netloc S1_0_1 1 0 1 20J 140n
+preplace netloc S_0_0_1 1 0 1 30J 160n
+preplace netloc S_0_1 1 0 2 NJ 220 NJ
+preplace netloc Mux_2_1_0_I 1 2 1 N 240
+levelinfo -pg 1 -20 110 280 380
+pagesize -pg 1 -db -bbox -sgen -90 0 490 440
+"
+}
+

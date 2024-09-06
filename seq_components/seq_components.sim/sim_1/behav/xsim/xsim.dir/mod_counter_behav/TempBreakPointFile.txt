@@ -1,0 +1,6 @@
+Breakpoint File Version 1.0
+29 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sources_1/new/mod_counter.v
+30 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sources_1/new/mod_counter.v
+31 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sources_1/new/mod_counter.v
+33 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sources_1/new/mod_counter.v
+35 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sources_1/new/mod_counter.v

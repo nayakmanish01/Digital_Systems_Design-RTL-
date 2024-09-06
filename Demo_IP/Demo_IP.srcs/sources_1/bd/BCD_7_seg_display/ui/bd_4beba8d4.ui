@@ -1,0 +1,29 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port a -pg 1 -lvl 3 -x 420 -y 210 -defaultsOSRD
+preplace port b -pg 1 -lvl 3 -x 420 -y 30 -defaultsOSRD
+preplace port c -pg 1 -lvl 3 -x 420 -y 60 -defaultsOSRD
+preplace port d -pg 1 -lvl 3 -x 420 -y 90 -defaultsOSRD
+preplace port e -pg 1 -lvl 3 -x 420 -y 120 -defaultsOSRD
+preplace port f -pg 1 -lvl 3 -x 420 -y 150 -defaultsOSRD
+preplace port g -pg 1 -lvl 3 -x 420 -y 180 -defaultsOSRD
+preplace portBus Bin -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace inst BCD_to_7_seg_0 -pg 1 -lvl 1 -x 110 -y 120 -defaultsOSRD
+preplace inst bus_split -pg 1 -lvl 2 -x 300 -y 120 -defaultsOSRD
+preplace netloc Bin_1 1 0 1 NJ 120
+preplace netloc BCD_to_7_seg_0_sout 1 1 1 NJ 120
+preplace netloc xlslice_1_Dout 1 2 1 390J 30n
+preplace netloc xlslice_0_Dout 1 2 1 390J 180n
+preplace netloc xlslice_2_Dout 1 2 1 400J 60n
+preplace netloc xlslice_3_Dout 1 2 1 390J 90n
+preplace netloc xlslice_4_Dout 1 2 1 NJ 120
+preplace netloc xlslice_5_Dout 1 2 1 400J 140n
+preplace netloc xlslice_6_Dout 1 2 1 400J 160n
+levelinfo -pg 1 0 110 300 420
+pagesize -pg 1 -db -bbox -sgen -100 0 480 230
+"
+}
+

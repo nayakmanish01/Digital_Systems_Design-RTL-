@@ -1,0 +1,111 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xCE91EDA0CE91EDA0",
+      "device": "xc7z010clg400-1",
+      "name": "MUX_4_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Mux_2_1_0": "",
+      "Mux_2_1_1": "",
+      "Mux_2_1_2": ""
+    },
+    "ports": {
+      "S1": {
+        "direction": "I"
+      },
+      "S_0": {
+        "direction": "I"
+      },
+      "I0": {
+        "direction": "I"
+      },
+      "I1": {
+        "direction": "I"
+      },
+      "I2": {
+        "direction": "I"
+      },
+      "I3": {
+        "direction": "I"
+      },
+      "Mux_out": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "Mux_2_1_0": {
+        "vlnv": "xilinx.com:user:Mux_2_1:1.0",
+        "xci_name": "MUX_4_1_Mux_2_1_0_0"
+      },
+      "Mux_2_1_1": {
+        "vlnv": "xilinx.com:user:Mux_2_1:1.0",
+        "xci_name": "MUX_4_1_Mux_2_1_0_1"
+      },
+      "Mux_2_1_2": {
+        "vlnv": "xilinx.com:user:Mux_2_1:1.0",
+        "xci_name": "MUX_4_1_Mux_2_1_0_2"
+      }
+    },
+    "nets": {
+      "Mux_2_1_0_I": {
+        "ports": [
+          "Mux_2_1_0/I",
+          "Mux_2_1_2/A"
+        ]
+      },
+      "Mux_2_1_1_I": {
+        "ports": [
+          "Mux_2_1_1/I",
+          "Mux_2_1_2/B"
+        ]
+      },
+      "S_0_1": {
+        "ports": [
+          "S1",
+          "Mux_2_1_2/S"
+        ]
+      },
+      "S_0_2": {
+        "ports": [
+          "S_0",
+          "Mux_2_1_0/S",
+          "Mux_2_1_1/S"
+        ]
+      },
+      "I0_1": {
+        "ports": [
+          "I0",
+          "Mux_2_1_0/A"
+        ]
+      },
+      "I1_1": {
+        "ports": [
+          "I1",
+          "Mux_2_1_0/B"
+        ]
+      },
+      "I2_1": {
+        "ports": [
+          "I2",
+          "Mux_2_1_1/A"
+        ]
+      },
+      "I3_1": {
+        "ports": [
+          "I3",
+          "Mux_2_1_1/B"
+        ]
+      },
+      "Mux_2_1_2_I": {
+        "ports": [
+          "Mux_2_1_2/I",
+          "Mux_out"
+        ]
+      }
+    }
+  }
+}

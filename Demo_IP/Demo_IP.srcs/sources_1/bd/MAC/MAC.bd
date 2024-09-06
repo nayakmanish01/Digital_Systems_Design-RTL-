@@ -1,0 +1,30 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z010clg400-1",
+      "name": "MAC",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1"
+    },
+    "design_tree": {
+      "xbip_multadd_0": "",
+      "c_addsub_0": "",
+      "mult_gen_0": ""
+    },
+    "components": {
+      "xbip_multadd_0": {
+        "vlnv": "xilinx.com:ip:xbip_multadd:3.0",
+        "xci_name": "MAC_xbip_multadd_0_0"
+      },
+      "c_addsub_0": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "xci_name": "MAC_c_addsub_0_0"
+      },
+      "mult_gen_0": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "xci_name": "MAC_mult_gen_0_0"
+      }
+    }
+  }
+}

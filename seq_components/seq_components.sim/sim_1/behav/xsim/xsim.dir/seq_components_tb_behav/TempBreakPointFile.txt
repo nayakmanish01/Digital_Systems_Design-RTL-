@@ -1,0 +1,11 @@
+Breakpoint File Version 1.0
+72 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v
+73 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v
+74 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v
+75 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v
+76 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v
+77 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v
+78 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v
+79 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v
+80 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v
+69 true D:/B.Tech/RTL resources/verilog FPGA course Projects/seq_components/seq_components.srcs/sim_1/new/seq_components_tb.v

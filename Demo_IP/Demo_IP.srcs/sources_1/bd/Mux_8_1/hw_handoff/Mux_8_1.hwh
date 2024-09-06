@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Jun  1 17:44:31 2024" VIVADOVERSION="2019.1">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.1" DEVICE="7z010" NAME="Mux_8_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="S_0" SIGIS="undef" SIGNAME="External_Ports_S_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_3" PORT="S"/>
+        <CONNECTION INSTANCE="Mux_2_1_2" PORT="S"/>
+        <CONNECTION INSTANCE="Mux_2_1_1" PORT="S"/>
+        <CONNECTION INSTANCE="Mux_2_1_0" PORT="S"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S_1" SIGIS="undef" SIGNAME="External_Ports_S_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_4" PORT="S"/>
+        <CONNECTION INSTANCE="Mux_2_1_5" PORT="S"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S_2" SIGIS="undef" SIGNAME="External_Ports_S_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_6" PORT="S"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="I_0" SIGIS="undef" SIGNAME="Mux_2_1_6_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_6" PORT="I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A_0" SIGIS="undef" SIGNAME="External_Ports_A_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_0" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B_0" SIGIS="undef" SIGNAME="External_Ports_B_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_0" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A_1" SIGIS="undef" SIGNAME="External_Ports_A_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_1" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B_1" SIGIS="undef" SIGNAME="External_Ports_B_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_1" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A_2" SIGIS="undef" SIGNAME="External_Ports_A_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_2" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B_2" SIGIS="undef" SIGNAME="External_Ports_B_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_2" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A_3" SIGIS="undef" SIGNAME="External_Ports_A_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_3" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B_3" SIGIS="undef" SIGNAME="External_Ports_B_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Mux_2_1_3" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/Mux_2_1_0" HWVERSION="1.0" INSTANCE="Mux_2_1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux_2_1" VLNV="xilinx.com:user:Mux_2_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Mux_8_1_Mux_2_1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S" SIGIS="undef" SIGNAME="External_Ports_S_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="I" SIGIS="undef" SIGNAME="Mux_2_1_0_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_5" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/Mux_2_1_1" HWVERSION="1.0" INSTANCE="Mux_2_1_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux_2_1" VLNV="xilinx.com:user:Mux_2_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Mux_8_1_Mux_2_1_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S" SIGIS="undef" SIGNAME="External_Ports_S_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="I" SIGIS="undef" SIGNAME="Mux_2_1_1_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_5" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/Mux_2_1_2" HWVERSION="1.0" INSTANCE="Mux_2_1_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux_2_1" VLNV="xilinx.com:user:Mux_2_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Mux_8_1_Mux_2_1_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S" SIGIS="undef" SIGNAME="External_Ports_S_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="I" SIGIS="undef" SIGNAME="Mux_2_1_2_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_4" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/Mux_2_1_3" HWVERSION="1.0" INSTANCE="Mux_2_1_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux_2_1" VLNV="xilinx.com:user:Mux_2_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Mux_8_1_Mux_2_1_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S" SIGIS="undef" SIGNAME="External_Ports_S_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="I" SIGIS="undef" SIGNAME="Mux_2_1_3_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_4" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/Mux_2_1_4" HWVERSION="1.0" INSTANCE="Mux_2_1_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux_2_1" VLNV="xilinx.com:user:Mux_2_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Mux_8_1_Mux_2_1_0_4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S" SIGIS="undef" SIGNAME="External_Ports_S_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="Mux_2_1_2_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_2" PORT="I"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="Mux_2_1_3_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_3" PORT="I"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="I" SIGIS="undef" SIGNAME="Mux_2_1_4_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_6" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/Mux_2_1_5" HWVERSION="1.0" INSTANCE="Mux_2_1_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux_2_1" VLNV="xilinx.com:user:Mux_2_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Mux_8_1_Mux_2_1_0_5"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S" SIGIS="undef" SIGNAME="External_Ports_S_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="Mux_2_1_0_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_0" PORT="I"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="Mux_2_1_1_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_1" PORT="I"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="I" SIGIS="undef" SIGNAME="Mux_2_1_5_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_6" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/Mux_2_1_6" HWVERSION="1.0" INSTANCE="Mux_2_1_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux_2_1" VLNV="xilinx.com:user:Mux_2_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Mux_8_1_Mux_2_1_0_6"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S" SIGIS="undef" SIGNAME="External_Ports_S_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="Mux_2_1_5_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_5" PORT="I"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="Mux_2_1_4_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux_2_1_4" PORT="I"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="I" SIGIS="undef" SIGNAME="Mux_2_1_6_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

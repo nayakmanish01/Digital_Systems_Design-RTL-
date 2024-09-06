@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../Demo_IP.srcs/sources_1/bd/barrel_shifter_8_bit/sim/barrel_shifter_8_bit.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
