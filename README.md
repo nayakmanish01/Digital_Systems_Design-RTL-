@@ -1,141 +1,126 @@
-Overview
-This repository contains Verilog code for Digital Hardware Modeling using verilog, organized into four main folders: Demo_IP, Mini_Projects, seq_components, seq_components2 and seq_components3. Each folder contains its own set of design sources and simulation testbenches.
+## Digital_Systems_Design-RTL
 
-Directory Structure
-Digital_Systems_Design-RTL/
-├── Demo_IP
-│   ├── Demo_IP.srcs
-│   │   ├── sources_1
-│   │   │   ├── bd
-│   │   │   │   ├── BCD_7_seg_display
-│   │   │   │   ├── MAC
-│   │   │   │   ├── MUX_4_1
-│   │   │   │   ├── MUX_8_1from_4_1
-│   │   │   │   ├── Mux_2_1
-│   │   │   │   ├── Mux_8_1
-│   │   │   │   ├── barrel_shifter_4_bit
-│   │   │   │   ├── barrel_shifter_8_bit
-│   │   │   │   ├── design_1
-│   │   │   │   ├── mref
-│   │   │   │   ├── mux_16_1
-│   │   │   │   ├── ripple_carry_adder_4bit
-│   │   │   │   └── shift_reg
-│   │   │   └── new
-│   │   │       ├── 2_1_Mux.v
-│   │   │       ├── BCD_to_7_seg.v
-│   │   │       ├── MAC.v
-│   │   │       ├── Mux_16_1.v
-│   │   │       ├── Mux_2_1.v
-│   │   │       ├── component.xml
-│   │   │       ├── dff.v
-│   │   │       └── fa.v
-│   └── Demo_IP.xpr
-├── Mini_Projects
-│   ├── Mini_Projects.srcs
-│   │   ├── sources_1
-│   │   │   └── new
-│   │   │       ├── I2Cv.v
-│   │   │       ├── PWM.v
-│   │   │       ├── SPI.v
-│   │   │       └── UART.v
-│   │   └── sim_1
-│   │       └── new
-│   │           └── UART_tb.v
-│   └── Mini_Projects.xpr
-├── seq_components
-│   ├── seq_components.srcs
-│   │   ├── sources_1
-│   │   │   └── new
-│   │   │       ├── JK_FF_bh.v
-│   │   │       ├── PISO_shift_reg.v
-│   │   │       ├── basic_counter.v
-│   │   │       ├── concurrent_assignment.v
-│   │   │       ├── dff_pe_alr.v
-│   │   │       ├── dff_pe_air_als.v
-│   │   │       ├── dff_pe_asy.v
-│   │   │       ├── dlatch_bh.v
-│   │   │       ├── dlatch_bh_rst.v
-│   │   │       ├── dlatch_df.v
-│   │   │       ├── freq_divider.v
-│   │   │       ├── left_shift_register.v
-│   │   │       ├── mod_counter.v
-│   │   │       ├── mod_range_counter.v
-│   │   │       ├── right_shift_register.v
-│   │   │       └── universal_shift_register.v
-│   └── seq_components.srcs
-│       └── sim_1
-│           └── new
-│               └── mod_counter_tb.v
-│               └── seq_components_tb.v
-├── seq_components2
-│   ├── seq_components2.srcs
-│   │   ├── sources_1
-│   │   │   └── new
-│   │   │       ├── Booth_Multiplication.v
-│   │   │       ├── Booth_Multiplication_controller.v
-│   │   │       ├── FIFO.v
-│   │   │       ├── FIFO_dual_clock.v
-│   │   │       ├── FIFO_single_clock.v
-│   │   │       ├── GCD_algo_datapath.v
-│   │   │       ├── GCD_controller.v
-│   │   │       ├── PIPO_concate.v
-│   │   │       ├── Rep_MUL_Datapath.v
-│   │   │       ├── Rep_Mul_controller.v
-│   │   │       ├── add_right_shift_multiplier_datapath.v
-│   │   │       ├── add_shift_right_controller.v
-│   │   │       ├── cyclic_lamp.v
-│   │   │       ├── freq_divider.v
-│   │   │       ├── fsm_3_procc_moore.v
-│   │   │       ├── fsm_examples.v
-│   │   │       ├── serial_adder.v
-│   │   │       ├── serial_parity_detector.v
-│   │   │       └── water_reservior_controller.v
-│   └── seq_components2.srcs
-│       └── sim_1
-│           └── new
-│               └── Booth_Multiplication_tb.v
-│               └── FIFO_tb.v
-│               └── GCD_tb.v
-│               └── PIPO_concate_tb.v
-│               └── Rep_MUL_tb.v
-│               └── add_right_shift_multiplier_tb.v
-│               └── cyclic_lamp_tb.v
-│               └── freq_divider_4_tb.v
-│               └── freq_divider_tb.v
-│               └── fsm_examples_tb.v
-│               └── serial_adder_tb.v
-│               └── serial_parity_detector_tb.v
-├── seq_components3
-│   ├── seq_components3.srcs
-│   │   ├── sources_1
-│   │   │   └── new
-│   │   │       ├── Dual_port_synch_v1.v
-│   │   │       ├── FIFO.v
-│   │   │       ├── clock_divide_3.v
-│   │   │       ├── fsm_examples.v
-│   │   │       ├── single_port_synchronous_ramV3.v
-│   │   │       ├── single_port_asynchronous_ram.v
-│   │   │       ├── single_port_synchronous_ram.v
-│   │   │       ├── single_port_synchronous_ramV2.v
-│   │   │       └── true_dual_port.v
-│   └── seq_components3.srcs
-│       └── sim_1
-│           └── new
-│               └── FIFO_tb.v
-│               └── fsm_examples_tb.v
-│               └── [other_testbench_files_for_seq_components3]
-├── Booths Algorithm.pdf
-└── Greatest common Divisor.pdf
-└── Multiplication By Repeated Addition.pdf
-Component Descriptions
-Demo_IP: Contains components related to digital system demonstrations, including multiplexers, adders, and other combinational circuits.
-Mini_Projects: Contains smaller-scale projects implementing various functionalities, such as I2C, PWM, SPI, and UART.
-seq_components: Contains sequential components like flip-flops, registers, and counters.
-seq_components2: Contains more advanced sequential components, including multipliers, FIFOs, and finite state machines.
-seq_components3: Contains additional sequential components, such as dual-port memories and RAM modules.
-Booths Algorithm.pdf: A PDF document likely explaining Booth's algorithm, which is often used for efficient multiplication.
-Greatest common Divisor.pdf: A PDF document likely explaining the Greatest Common Divisor (GCD) algorithm.
-Multiplication By Repeated Addition.pdf: A PDF document likely explaining the concept of multiplication through repeated addition.
-Usage
-Design: To use the design components, include the necessary Verilog files in your project and instantiate them according to their interfaces.
-Simulation: To test the components, you can create your own testbenches or use the provided testbenches in the sim subdirectories of each folder.
+### Overview
+This repository contains Verilog code for various digital system designs, organized into four main folders: `Demo_IP`, `Mini_Projects`, `seq_components`, `seq_components2` and  `seq_components3`. Each folder contains its own set of design sources and simulation testbenches.
+
+# Digital Systems Design - RTL Project
+
+## Overview
+
+This repository contains various Verilog-based projects organized into directories representing different modules and components of digital systems. Each directory includes Verilog source files and corresponding testbenches for simulation. The repository covers a range of digital design concepts, including multiplexers, FSMs, arithmetic units, and memory designs.
+
+## Directory Descriptions
+
+### 1. **Demo_IP**
+   - **Common Location:** `Digital_Systems_Design-RTL/Demo_IP/Demo_IP.srcs/sources_1`
+   - **Design Files:**
+     - `2_1_Mux.v`: 2-to-1 multiplexer implementation.
+     - `BCD_to_7_seg.v`: BCD to 7-segment display decoder.
+     - `MAC.v`: Multiply-Accumulate unit.
+     - `Mux_16_1.v`: 16-to-1 multiplexer.
+     - `Mux_2_1.v`: 2-to-1 multiplexer (alternative design).
+     - `dff.v`: D flip-flop implementation.
+     - `fa.v`: Full adder implementation.
+   - **Block Design Subdirectories:**
+     - `bd/`: Contains block designs for IPs like BCD to 7-segment display, MAC, various multiplexers, barrel shifters, ripple carry adder, and shift registers.
+
+### 2. **Mini_Projects**
+   - **Common Location:** `Digital_Systems_Design-RTL/Mini_Projects/Mini_Projects.srcs`
+   - **Design Files:**
+     - `I2Cv.v`: I2C protocol implementation.
+     - `PWM.v`: Pulse Width Modulation module.
+     - `SPI.v`: Serial Peripheral Interface module.
+     - `UART.v`: Universal Asynchronous Receiver/Transmitter module.
+   - **Simulation Files:**
+     - `UART_tb.v`: Testbench for UART module.
+
+### 3. **seq_components**
+   - **Common Location:** `Digital_Systems_Design-RTL/seq_components/seq_components.srcs`
+   - **Design Files:**
+     - `JK_FF_bh.v`: JK flip-flop with behavioral modeling.
+     - `PISO_shift_reg.v`: Parallel-In Serial-Out shift register.
+     - `basic_counter.v`: Basic counter.
+     - `concurrent_assignment.v`: Module demonstrating concurrent assignments.
+     - `dff_pe_alr.v`: D flip-flop with preset and asynchronous reset.
+     - `dff_pe_air_als.v`: D flip-flop with preset, asynchronous reset, and asynchronous load.
+     - `dff_pe_asy.v`: D flip-flop with preset and asynchronous reset.
+     - `dlatch_bh.v`: D latch with behavioral modeling.
+     - `dlatch_bh_rst.v`: D latch with reset.
+     - `dlatch_df.v`: D latch with dataflow modeling.
+     - `freq_divider.v`: Frequency divider.
+     - `left_shift_register.v`: Left shift register.
+     - `mod_counter.v`: Modulo counter.
+     - `mod_range_counter.v`: Modulo range counter.
+     - `right_shift_register.v`: Right shift register.
+     - `universal_shift_register.v`: Universal shift register.
+   - **Simulation Files:**
+     - `mod_counter_tb.v`: Testbench for the modulo counter.
+     - `seq_components_tb.v`: General testbench covering multiple sequential components.
+
+### 4. **seq_components2**
+   - **Common Location:** `Digital_Systems_Design-RTL/seq_components2/seq_components2.srcs`
+   - **Design Files:**
+     - `Booth_Multiplication.v`: Booth's multiplication algorithm.
+     - `Booth_Multiplication_controller.v`: Controller for Booth's multiplication.
+     - `FIFO.v`: FIFO memory design.
+     - `FIFO_dual_clock.v`: Dual clock FIFO.
+     - `FIFO_single_clock.v`: Single clock FIFO.
+     - `GCD_algo_datapath.v`: Datapath for GCD algorithm.
+     - `GCD_controller.v`: Controller for GCD algorithm.
+     - `PIPO_concate.v`: Parallel-In Parallel-Out concatenation module.
+     - `Rep_MUL_Datapath.v`: Repeated multiplication datapath.
+     - `Rep_Mul_controller.v`: Controller for repeated multiplication.
+     - `add_right_shift_multiplier_datapath.v`: Datapath for right-shift add multiplier.
+     - `add_shift_right_controller.v`: Controller for right-shift add multiplier.
+     - `cyclic_lamp.v`: Cyclic lamp controller.
+     - `freq_divider.v`: Frequency divider.
+     - `fsm_3_procc_moore.v`: 3-process Moore FSM.
+     - `fsm_examples.v`: FSM design examples.
+     - `serial_adder.v`: Serial adder.
+     - `serial_parity_detector.v`: Serial parity detector.
+     - `water_reservior_controller.v`: Water reservoir controller FSM.
+   - **Simulation Files:**
+     - `Booth_Multiplication_tb.v`: Testbench for Booth's multiplication.
+     - `FIFO_tb.v`: Testbench for FIFO modules.
+     - `GCD_tb.v`: Testbench for GCD algorithm.
+     - `PIPO_concate_tb.v`: Testbench for PIPO concatenation.
+     - `Rep_MUL_tb.v`: Testbench for repeated multiplication.
+     - `add_right_shift_multiplier_tb.v`: Testbench for right-shift add multiplier.
+     - `cyclic_lamp_tb.v`: Testbench for cyclic lamp controller.
+     - `freq_divider_4_tb.v`: Testbench for 4-bit frequency divider.
+     - `freq_divider_tb.v`: Testbench for frequency divider.
+     - `fsm_examples_tb.v`: Testbench for FSM examples.
+     - `serial_adder_tb.v`: Testbench for serial adder.
+     - `serial_parity_detector_tb.v`: Testbench for serial parity detector.
+   - **References:**
+     - `Booths Algorithm.pdf`: Overview of Booth's Algorithm, used in `Booth_Multiplication.v`.
+     - `Greatest common Divisor.pdf`: Explanation of the GCD algorithm, used in `GCD_algo_datapath.v` and `GCD_controller.v`.
+     - `Multiplication By Repeated Addition.pdf`: Description of multiplication by repeated addition, used in `Rep_MUL_Datapath.v` and `Rep_Mul_controller.v`.
+
+### 5. **seq_components3**
+   - **Common Location:** `Digital_Systems_Design-RTL/seq_components3/seq_components3.srcs/`
+   - **Design Files:**
+     - `Dual_port_synch_v1.v`: Dual-port synchronous RAM.
+     - `FIFO.v`: FIFO memory design.
+     - `clock_divide_3.v`: Clock divider by 3.
+     - `fsm_examples.v`: FSM design examples.
+     - `single_port_synchronous_ram.v`: Single-port synchronous RAM (multiple versions).
+     - `single_port_asynchronous_ram.v`: Single-port asynchronous RAM.
+     - `true_dual_port.v`: True dual-port RAM.
+   - **Simulation Files:**
+     - `FIFO_tb.v`: Testbench for FIFO modules.
+     - `fsm_examples_tb.v`: Testbench for FSM examples.
+
+## Usage
+
+To use or simulate any of the components:
+1. Open the corresponding `.xpr` project file in Xilinx Vivado.
+2. Navigate to the `sources_1` directory for design files and the `sim_1` directory for simulation files.
+3. Run simulations using the provided testbenches to verify the functionality of each module.
+
+
+
+
+### Usage
+* **Design:** To use the design components, include the necessary Verilog files in your project and instantiate them according to their interfaces.
+* **Simulation:** To test the components, you can create your own testbenches or use the provided testbenches in the `sim` subdirectories of each folder.
