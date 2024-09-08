@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Sep  8 02:18:06 2024
+# Process ID: 19192
+# Current directory: D:/B.Tech/RTL_resources/verilog FPGA course Projects/Mini_Projects/Mini_Projects.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/B.Tech/RTL_resources/verilog FPGA course Projects/Mini_Projects/Mini_Projects.sim/sim_1/behav/xsim/xsim.dir/UART_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/B.Tech/RTL_resources/verilog FPGA course Projects/Mini_Projects/Mini_Projects.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/B.Tech/RTL_resources/verilog FPGA course Projects/Mini_Projects/Mini_Projects.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/B.Tech/RTL_resources/verilog -notrace
