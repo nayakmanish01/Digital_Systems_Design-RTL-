@@ -3,12 +3,6 @@
 ### Overview
 This repository contains Verilog code for various digital system designs, organized into four main folders: `Demo_IP`, `Mini_Projects`, `seq_components`, `seq_components2` and  `seq_components3`. Each folder contains its own set of design sources and simulation testbenches.
 
-# Digital Systems Design - RTL Project
-
-## Overview
-
-This repository contains various Verilog-based projects organized into directories representing different modules and components of digital systems. Each directory includes Verilog source files and corresponding testbenches for simulation. The repository covers a range of digital design concepts, including multiplexers, FSMs, arithmetic units, and memory designs.
-
 ## Directory Descriptions
 
 ### 1. **Demo_IP**
